@@ -16,7 +16,12 @@ const Presentation: React.FC<PresentationProps> = () => {
         />
         <div className="flex flex-col absolute justify-center items-center text-white top-0 left-0 w-full h-full">
           <p className="text-4xl pb-4">Find the best products in our store.</p>
-          <button className="p-2 border rounded-xl">Go to store</button>
+          <a
+            href="#products"
+            className="p-2 font-bold border rounded-xl hover:bg-white hover:text-black transition-all ease-in-out"
+          >
+            Go to store
+          </a>
         </div>
       </div>
     </section>

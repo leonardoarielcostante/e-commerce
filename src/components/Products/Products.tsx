@@ -1,20 +1,25 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Card } from "../Card"
-import image from "../../../public/images/presentation.png"
+import { MainContext } from "../../context/context"
 
 export type ProductsProps = {
-  // types...
+  //types...
 }
 
 const Products: React.FC<ProductsProps> = () => {
+  const { products, category } = useContext(MainContext)
+
   return (
-    <section className="w-full flex justify-center items-center pt-4">
+    <section
+      id="products"
+      className="w-full flex justify-center items-center pt-4"
+    >
       <div className="w-10/12">
-        <p className="text-xl pl-10">All products</p>
-        <div className="grid grid-cols-3 justify-items-center pt-4">
-          <Card image={image} title="Pepito" price={20} />
-          <Card image={image} title="Pepito" price={20} />
-          <Card image={image} title="Pepito" price={20} />
+        <p className="text-xl pl-10 capitalize">{category}</p>
+        <div className="grid grid-cols-4 justify-items-center pt-4 gap-4">
+          {products.map((e) => (
+            <Card key={e.id} image={e.image} title={e.title} price={e.price} />
+          ))}
         </div>
       </div>
     </section>

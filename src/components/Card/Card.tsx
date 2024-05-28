@@ -9,11 +9,11 @@ export type CardProps = {
 
 const Card: React.FC<CardProps> = ({ image, title, price }) => {
   return (
-    <button className="w-56 border-2 rounded shadow p-1">
-      <img className="w-full h-56 object-cover" src={image} alt="" />
+    <button className="w-48 border-2 rounded shadow p-1">
+      <img className="w-full h-56 object-contain p-4" src={image} alt="" />
       <div className="w-full text-start">
-        <h3>{title}</h3>
-        <p>{price}$</p>
+        <h3 className="text-nowrap overflow-hidden text-ellipsis">{title}</h3>
+        <p className="font-semibold text-lg">{price}$</p>
       </div>
     </button>
   )

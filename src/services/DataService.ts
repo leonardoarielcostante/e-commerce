@@ -22,13 +22,13 @@ export class DataService {
     }
   }
 
-  public async getCategories(): Promise<string>{
+  public async getCategories(): Promise<string[]>{
     try{
       const res = await fetch(this.CATEGORIES_URL)
       if(!res.ok){
         throw new Error(`Error in fetch categories: ${res.status}`)
       }
-      const data: string = await res.json()
+      const data: string[] = await res.json()
       return data
     } catch (error) {
       console.error("Error in fetch categories", error)
