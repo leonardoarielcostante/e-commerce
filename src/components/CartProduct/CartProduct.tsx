@@ -24,14 +24,12 @@ const CartProduct: React.FC<CartProductProps> = ({ product, quantity }) => {
         <img width="12" src={cross} alt="Cross logo" />
       </button>
       <img
-        className="object-fill w-10 2xl:w-20"
+        className="object-fill w-14 2xl:w-20"
         src={product.image}
         alt="Product image"
       />
       <div className="flex flex-col justify-start items-start w-full pl-2">
-        <p className="w-48 text-xs xl:text-sm 2xl:text-base 2xl:w-64">
-          {product.title}
-        </p>
+        <p className="text-xs xl:text-sm 2xl:text-base">{product.title}</p>
         <p className="font-bold 2xl:text-base">${product.price}</p>
       </div>
       <div className="pr-6 font-bold">

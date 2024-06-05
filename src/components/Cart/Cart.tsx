@@ -44,7 +44,7 @@ const Cart: React.FC<CartProps> = () => {
             alt="Store logo"
           />
         </div>
-        <div className="p-2 scroll overflow-y-auto h-[80%]">
+        <div className="p-2 scroll overflow-y-auto h-2/3">
           {cartItems.map((e, index) => (
             <CartProduct key={index} product={e.item} quantity={e.quantity} />
           ))}
