@@ -1,4 +1,6 @@
+import { Cart } from "./components/Cart"
 import { Categories } from "./components/Categories"
+import { Modal } from "./components/Modal"
 import { Nav } from "./components/Nav"
 import { Presentation } from "./components/Presentation"
 import { Products } from "./components/Products"
@@ -12,6 +14,8 @@ function App() {
         <Presentation />
         <Categories />
         <Products />
+        <Modal />
+        <Cart />
       </MainProvider>
     </>
   )

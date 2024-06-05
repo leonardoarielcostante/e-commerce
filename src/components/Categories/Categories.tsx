@@ -18,9 +18,9 @@ const Categories: React.FC<CategoriesProps> = () => {
   }
 
   return (
-    <section className="w-full flex justify-center items-center text-xl pt-4">
-      <div className="w-10/12 border-t-2 border-b-2 p-4">
-        <div className="w-full justify-between flex">
+    <section className="w-full flex pt-4">
+      <div className="w-full border-t-2 border-b-2 py-2">
+        <div className="flex justify-evenly">
           {categories.map((e, index) => (
             <Button
               key={index}
