@@ -13,10 +13,12 @@ const Cart: React.FC<CartProps> = () => {
   const { openCart, setOpenCart, cartItems } = useContext(MainContext)
   const shouldRender = useShouldRender()
 
-  const total = cartItems.reduce(
-    (accumulator, product) =>
-      accumulator + product.item.price * product.quantity,
-    0
+  const total = Math.round(
+    cartItems.reduce(
+      (accumulator, product) =>
+        accumulator + product.item.price * product.quantity,
+      0
+    )
   )
 
   if (!shouldRender) {

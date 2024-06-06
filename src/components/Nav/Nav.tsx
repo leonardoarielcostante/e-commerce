@@ -27,10 +27,12 @@ const Nav: React.FC<NavProps> = () => {
     }
   }
 
-  const total = cartItems.reduce(
-    (accumulator, product) =>
-      accumulator + product.item.price * product.quantity,
-    0
+  const total = Math.round(
+    cartItems.reduce(
+      (accumulator, product) =>
+        accumulator + product.item.price * product.quantity,
+      0
+    )
   )
 
   function setData(e: Category) {
