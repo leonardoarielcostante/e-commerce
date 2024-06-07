@@ -41,7 +41,7 @@ const Nav: React.FC<NavProps> = () => {
   }
 
   return (
-    <nav className="w-full flex px-4 justify-center items-center border-b-2 h-24 text-xs lg:text-base 2xl:text-2xl 2xl:h-36">
+    <nav className="w-full flex px-4 justify-center items-center border-b-2 h-24 text-xs lg:text-base 2xl:text-xl 2xl:h-36">
       <div className="flex items-center h-full sm:justify-between sm:w-10/12">
         <ul className="flex items-center justify-center font-semibold h-full">
           <li className="h-2/5 flex justify-center items-center rounded hover:bg-slate-100 transition-all ease-in-out">

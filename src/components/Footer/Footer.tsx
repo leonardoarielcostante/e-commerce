@@ -7,7 +7,7 @@ export type FooterProps = {
 
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="h-24 w-full mt-6 text-white">
+    <footer className="h-24 w-full mt-6 text-white 2xl:text-lg">
       <div className="flex flex-col justify-center items-center h-full bg-black">
         <a
           href="https://leonardoarielcostante.github.io/"

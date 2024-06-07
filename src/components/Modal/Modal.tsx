@@ -69,7 +69,7 @@ const Modal: React.FC = () => {
           <h3 className="font-bold w-80 text-center">
             {selectedProduct.title}
           </h3>
-          <p className="w-80 text-justify p-2 text-xs 2xl:text-base">
+          <p className="w-80 text-justify p-2 text-xs 2xl:text-sm">
             {selectedProduct.description}
           </p>
           <div className="text-lg font-bold flex w-full justify-evenly items-center 2xl:text-2xl">
